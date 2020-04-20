@@ -14,12 +14,11 @@ import androidx.annotation.RequiresApi
 import java.util.*
 
 fun SpannableString.applySpan(highlightStr: String, characterStyle: Any) = apply {
+  this.toString().getOccuranceIndexList(highlightStr).forEach {
     val startIndex = indexOf(highlightStr)
     val endIndex = startIndex + highlightStr.length
-    val isValidHighlighStr = startIndex != -1
-    if (isValidHighlighStr) {
-        setSpan(characterStyle, startIndex, endIndex, 0)
-    }
+    setSpan(characterStyle, startIndex, endIndex, 0)
+  }
 }
 
 // TextSize
