@@ -22,6 +22,8 @@ dependencies {
 ```
 
 # Supported Spans list
+![Result](https://miro.medium.com/max/2000/1*8XmY9xWsawDd5s5FnzETzg.jpeg)
+
 **TextSize**
  1. AbsoluteSizeSpan
  2. RelativeSizeSpan
